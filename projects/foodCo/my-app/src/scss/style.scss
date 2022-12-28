@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+@font-face {
+  font-family: circular;
+  src: url(../fonts/Circular_Std_Font.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_Bd;
+  src: url(../fonts/AirbnbCereal_W_Bd.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_Bk;
+  src: url(../fonts//AirbnbCereal_W_Bk.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_Blk;
+  src: url(../fonts/AirbnbCereal_W_Blk.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_Lt;
+  src: url(../fonts/AirbnbCereal_W_Lt.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_Md;
+  src: url(../fonts/AirbnbCereal_W_Md.otf);
+}
+@font-face {
+  font-family: AirbnbCereal_W_XBd;
+  src: url(../fonts/AirbnbCereal_W_XBd.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  //   font-family: circular;
+  white-space: none;
+}
+// .container {
+//   margin: 2rem 14rem;
+// }
+// .btn,
+// .link {
+//   cursor: pointer;
+// }
+.link {
+  text-decoration: none;
+  color: #453794;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+// .active {
+//   color: #353237 !important;
+// }
+li {
+  list-style-type: none;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+.my-5 {
+  margin: 5rem 0;
+}
+
+// =======================
+//===========================
+#header {
+  background-color: #fff5f2;
+
+  .navbar {
+    .navbar-nav {
+      align-items: center;
+      .nav-item {
+        margin: 0 1.5rem;
+        .nav-link {
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #9a97a1;
+          //   color: #353237;
+          &:hover {
+            color: #353237;
+          }
+        }
+      }
+      .btn {
+        background-color: #7b4cdf;
+        border-radius: 20.5px;
+        color: #fff;
+        margin-left: 2rem;
+        padding: 11px 21px;
+      }
+    }
+  }
+
+  .header-content {
+    overflow: hidden;
+    box-sizing: border-box;
+    .left_h_c {
+      align-self: center;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      /* or 118% */
+      color: #353237;
+      span {
+        color: #ff6b01;
+      }
+    }
+    p {
+      font-weight: 450;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+      color: #9a97a1;
+    }
+    .card {
+      background: none;
+      border: none;
+      margin-bottom: 5rem;
+      .head-avatar {
+        position: relative;
+        z-index: 11;
+      }
+      .burger,
+      .order-card,
+      .food-card {
+        position: absolute;
+        z-index: 11111;
+      }
+      .burger {
+        width: 120px;
+        height: auto;
+        left: 230px;
+        z-index: 1;
+      }
+      .order-card {
+        // position: absolute;
+        max-width: 300px;
+        height: auto;
+        top: 392px;
+        left: 177px;
+        bottom: 0;
+      }
+      .food-card {
+        // position: absolute;
+        right: -20px;
+        bottom: -127px;
+      }
+    }
+  }
+}
+
+.second-section {
+  background-color: #fff;
+  .row {
+    display: flex;
+  }
+  img {
+    max-width: 200px;
+    height: auto;
+    transition: 0.7s;
+    filter: grayscale(100%) !important;
+    &:hover {
+      filter: grayscale(0%) !important;
+    }
+  }
+}
+
+.third-section {
+  padding: 4rem 0;
+  text-align: center;
+  .col-lg-4 {
+    margin: 2rem 0;
+  }
+  h5 {
+    color: #ff6b01;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  h2 {
+    font-family: "AirbnbCereal_W_Bd";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #353237;
+  }
+  article {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #9a97a1;
+  }
+  .btn {
+    border: 1px solid #7b4cdf;
+    border-radius: 19.5px;
+    padding: 10px 30px;
+    font-weight: 600;
+    &:hover {
+      background: #7b4cdf;
+      color: #fff;
+    }
+  }
+}
+
+.fourth-section {
+  background-color: #fff5f2;
+  overflow: hidden;
+
+  .col-md-3 {
+    width: 270px;
+    height: auto;
+    padding-bottom: 3rem;
+    background: #ffffff;
+    box-shadow: 0px 19px 33px #f2fafc;
+    border-radius: 12px;
+  }
+  .food-items {
+    margin-top: 4rem;
+  }
+  .fourth-header {
+    text-align: center;
+  }
+
+  .row {
+    align-items: center;
+    .cart-header {
+      position: relative;
+      img {
+        position: static;
+      }
+    }
+    .food-card {
+      margin: 2rem 0;
+      box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+      // box-shadow: 0px 19px 33px #f2fafc;
+      border-radius: 12px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      cursor: pointer;
+      &:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      }
+    }
+    .cart-info {
+      padding: 2rem;
+      border-radius: 12px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+      .food-price {
+        background-color: #7b4cdf12;
+        color: #353237;
+        text-align: center;
+        width: 47px;
+        height: 47px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 25px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        padding-top: 12px;
+        color: #353237;
+      }
+    }
+    .ratings {
+      background-color: #7b4cdf;
+      padding: 7px 14px;
+      border-radius: 7px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 1111;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #fff;
+      img {
+        padding-right: 7px;
+      }
+    }
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #353237;
+  }
+  img {
+    margin-right: 5px;
+  }
+
+  .food-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #353237;
+  }
+}
+
+.fourth-section,
+.fifth-section {
+  padding: 3rem 0;
+  text-align: center;
+  h5 {
+    color: #ff6b01;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  h2 {
+    font-family: "AirbnbCereal_W_Bd";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #353237;
+  }
+  article {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 28px;
+    color: #9a97a1;
+  }
+}
+
+.fifth-section {
+  .fifth-header {
+    padding: 3rem 0;
+  }
+  p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: #353237;
+    padding: 2rem;
+    text-align: left;
+  }
+  .col-lg-4 {
+    box-sizing: border-box;
+  }
+
+  .fifth-content {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 16px;
+    transition: 0.7s;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.068) -4px 9px 25px -6px;
+    }
+  }
+}
+
+.sixth-section {
+  padding: 6rem 0;
+  background-color: #fff5f2;
+  .row {
+    justify-content: space-around !important;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    /* or 128% */
+    color: #353237;
+    margin-top: 2rem;
+  }
+  article {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    color: #9a97a1;
+    padding: 2rem 0;
+  }
+  .btn {
+    padding: 1rem 0;
+    margin-right: 1rem;
+  }
+  .products {
+    align-self: center;
+  }
+}
+
+footer {
+  background-color: #7b4cdf;
+  color: #fff;
+  padding: 5rem 0;
+  img {
+    color: #fff;
+  }
+  p {
+    margin: 2rem 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 200% */
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  li {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 1rem 0;
+    color: #fff5f2c0;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .copyrights {
+    text-align: center;
+  }
+}
