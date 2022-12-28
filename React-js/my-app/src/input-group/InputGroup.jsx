@@ -13,7 +13,6 @@ function InputGroup(props) {
             fontSize: "1.2rem",
             fontWeight: "600",
             margin: "1rem"
-            
         }}> {props.label} </label>
         <input type = {props.type} />
         </div>
