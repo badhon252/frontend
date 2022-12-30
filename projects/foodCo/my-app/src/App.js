@@ -4,7 +4,7 @@ import Header from './Components/Header/Header'
 import Vouchers from './Components/Vouchers/Vouchers';
 import Feature from './Components/Feature/Feature';
 import Pricing from './Components/Pricing/Pricing';
-import Blog from './Components/Blog/Blog';
+import Blogs from './Components/Blog/Blogs';
 import AppLink from './Components/Download_link/AppLink';
 import Footer from './Components/Footer/Footer';
 
@@ -15,7 +15,7 @@ function App() {
       <Vouchers/>
       <Feature/>
       <Pricing/>
-      <Blog/>
+      <Blogs/>
       <AppLink/>
       <Footer/>
 
