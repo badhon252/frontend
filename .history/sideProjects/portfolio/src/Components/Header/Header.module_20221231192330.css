@@ -1,0 +1,23 @@
+.headerContent {
+    margin: 0 10rem;
+    padding: 15px 25px;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heroSection .heroText {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.heroSection .heroText .heroTextSpan {
+    color: #000;
+}

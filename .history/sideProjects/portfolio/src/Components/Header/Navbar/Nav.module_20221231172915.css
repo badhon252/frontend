@@ -1,0 +1,32 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(240, 231, 231);
+    margin: 0;
+}
+
+.navBar .navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navBar li {
+    list-style: none;
+    padding: 1rem 2rem;
+}
+
+.navBar .navbarBrand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+}
+
+.navBar .navbarNav .navLink {
+    color: #fff;
+    text-decoration: none;
+}
