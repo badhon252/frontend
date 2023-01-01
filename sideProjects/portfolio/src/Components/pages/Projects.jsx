@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Projects() {
-  return (
-    <h1>Projects Pages</h1>
-  )
+  return <h1>Projects Pages</h1>;
 }
