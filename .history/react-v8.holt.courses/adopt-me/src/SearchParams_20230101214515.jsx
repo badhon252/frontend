@@ -11,7 +11,7 @@ const SearchParams = () => {
 
   useEffect(() => {
     requestPets();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function requestPets() {
     const res = await fetch(
@@ -78,16 +78,14 @@ const SearchParams = () => {
 
         <button>Submit</button>
       </form>
-      {pets.map((pet) => {
-        return (
-          <Pet
-            name={pet.name}
-            animal={pet.animal}
-            breed={pet.breed}
-            key={pet.id}
-          />
-        );
-      })}
+      {pets.map((pet) => (
+        <Pet
+          name={pet.name}
+          animal={pet.animal}
+          breed={pet.breed}
+          key={pet.id}
+        />
+      ))}
     </div>
   );
 };

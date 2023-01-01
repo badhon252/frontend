@@ -30,6 +30,7 @@ export default function Button(props) {
 };
 
     const userVariant = variants[props.variant];
+    console.log(userVariant)
     const userSize = sizes[props.size]
     return <button type={props.type} style={{
                 border:"1px solid #000",
