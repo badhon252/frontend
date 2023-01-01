@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function HeaderContent() {
-  return (
-    <div>HeaderContent</div>
-  )
+  return <div>HeaderContent</div>;
 }

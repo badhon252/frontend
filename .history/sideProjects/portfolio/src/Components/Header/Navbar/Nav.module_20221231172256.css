@@ -1,25 +1,25 @@
 .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 .navBar .navLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
 
 .navBar .navbarNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
 
 .navBar .navLinks li {
-    list-style: none;
-    padding: 1rem 2rem;
+  list-style: none;
+  padding: 1rem 2rem;
 }
