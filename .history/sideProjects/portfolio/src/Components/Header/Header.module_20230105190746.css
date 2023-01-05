@@ -1,0 +1,22 @@
+.headerContent {
+    padding: 0 10rem;
+    background: aquamarine;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    max-height: 100%;
+}
+
+.heroSection .heroText {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
