@@ -1,34 +1,34 @@
 .navBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  background-color: rgb(240, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: rgb(240, 231, 231);
 }
 
 .navBar .navbarNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 
 .navBar li {
-  list-style: none;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
+    list-style: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .navBar .navbarBrand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgb(6, 6, 6);
-  text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(6, 6, 6);
+    text-decoration: none;
 }
 
 .navBar .navbarNav .navLinks {
-  color: rgb(1, 1, 1);
-  text-decoration: none;
-  cursor: pointer;
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    cursor: pointer;
 }

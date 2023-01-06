@@ -1,8 +1,8 @@
-import Clases from "./Nav.module";
+import Clases from "./Nav.module"
 export default function NavItem(props) {
   return (
     <li class="nav-item">
-      <a className="nav-link">{props.text}</a>
+        <a className="nav-link">{props.text}</a>
     </li>
-  );
+  )
 }

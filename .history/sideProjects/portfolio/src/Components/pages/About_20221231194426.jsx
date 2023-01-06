@@ -1,10 +1,10 @@
-import HeroSection from "../Header/HeroSection";
-import Navs from "../Header/Navbar/Navs";
+import HeroSection from "../Header/HeroSection"
+import Navs from "../Header/Navbar/Navs"
 export default function About() {
   return (
     <div>
-      <Navs />
-      <HeroSection />
+    <Navs/>
+    <HeroSection/>
     </div>
-  );
+  )
 }

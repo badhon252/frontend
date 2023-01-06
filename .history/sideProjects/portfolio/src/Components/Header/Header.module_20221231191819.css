@@ -1,14 +1,14 @@
 .headerContent {
-  margin: 0 10rem;
-  padding: 15px 25px;
+    margin: 0 10rem;
+    padding: 15px 25px;
 }
 
 .heroSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #282a30;
-  color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282a30;
+    color: #fff;
 }
