@@ -31,7 +31,9 @@
 .navBar .navbarBrand {
     font-size: 1.5rem;
     font-weight: 700;
-    color: rgb(6, 6, 6);
+    background: linear-gradient(180deg, #FF0055 50%, #0000ff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     text-decoration: none;
 }
 
@@ -45,3 +47,11 @@
     border-bottom: 2px solid red;
     color: #000;
 }
+
+
+/* .navbarBrand .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+} */
