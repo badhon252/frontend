@@ -1,565 +1,580 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
 @font-face {
-    font-family: circular;
-    src: url(../fonts/Circular_Std_Font.otf);
+  font-family: circular;
+  src: url(../fonts/Circular_Std_Font.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_Bd;
-    src: url(../fonts/AirbnbCereal_W_Bd.otf);
+  font-family: AirbnbCereal_W_Bd;
+  src: url(../fonts/AirbnbCereal_W_Bd.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_Bk;
-    src: url(../fonts//AirbnbCereal_W_Bk.otf);
+  font-family: AirbnbCereal_W_Bk;
+  src: url(../fonts//AirbnbCereal_W_Bk.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_Blk;
-    src: url(../fonts/AirbnbCereal_W_Blk.otf);
+  font-family: AirbnbCereal_W_Blk;
+  src: url(../fonts/AirbnbCereal_W_Blk.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_Lt;
-    src: url(../fonts/AirbnbCereal_W_Lt.otf);
+  font-family: AirbnbCereal_W_Lt;
+  src: url(../fonts/AirbnbCereal_W_Lt.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_Md;
-    src: url(../fonts/AirbnbCereal_W_Md.otf);
+  font-family: AirbnbCereal_W_Md;
+  src: url(../fonts/AirbnbCereal_W_Md.otf);
 }
 
 @font-face {
-    font-family: AirbnbCereal_W_XBd;
-    src: url(../fonts/AirbnbCereal_W_XBd.otf);
+  font-family: AirbnbCereal_W_XBd;
+  src: url(../fonts/AirbnbCereal_W_XBd.otf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    white-space: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  white-space: none;
 }
 
 .link {
-    text-decoration: none;
-    color: #453794;
+  text-decoration: none;
+  color: #453794;
 }
 
 .btn {
-    outline: none;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: 400;
+  outline: none;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .py-1 {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .py-2 {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .py-3 {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .py-4 {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 .my-1 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .my-1 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .my-2 {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .my-3 {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .my-4 {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 .my-5 {
-    margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 #header {
-    background-color: #fff5f2;
+  background-color: #fff5f2;
 }
 
 #header .navbar .navbar-nav {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #header .navbar .navbar-nav .nav-item {
-    margin: 0 1.5rem;
+  margin: 0 1.5rem;
 }
 
 #header .navbar .navbar-nav .nav-item .nav-link {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #9a97a1;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #9a97a1;
 }
 
 #header .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #353237;
+  color: #353237;
 }
 
 #header .navbar .navbar-nav .btn {
-    background-color: #7b4cdf;
-    border-radius: 20.5px;
-    color: #fff;
-    margin-left: 2rem;
-    padding: 11px 21px;
+  background-color: #7b4cdf;
+  border-radius: 20.5px;
+  color: #fff;
+  margin-left: 2rem;
+  padding: 11px 21px;
 }
 
 #header .header-content {
-    overflow: hidden;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #header .header-content .left_h_c {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 #header .header-content h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 66px;
-    /* or 118% */
-    color: #353237;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  /* or 118% */
+  color: #353237;
 }
 
 #header .header-content h1 span {
-    color: #ff6b01;
+  color: #ff6b01;
 }
 
 #header .header-content p {
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 156% */
-    color: #9a97a1;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #9a97a1;
 }
 
 #header .header-content .card {
-    background: none;
-    border: none;
-    margin-bottom: 5rem;
+  background: none;
+  border: none;
+  margin-bottom: 5rem;
 }
 
 #header .header-content .card .head-avatar {
-    position: relative;
-    z-index: 11;
+  position: relative;
+  z-index: 11;
 }
 
 #header .header-content .card .burger,
 #header .header-content .card .order-card,
 #header .header-content .card .food-card {
-    position: absolute;
-    z-index: 11111;
+  position: absolute;
+  z-index: 11111;
 }
 
 #header .header-content .card .burger {
-    width: 120px;
-    height: auto;
-    left: 230px;
-    z-index: 1;
+  width: 120px;
+  height: auto;
+  left: 230px;
+  z-index: 1;
 }
 
 #header .header-content .card .order-card {
-    max-width: 300px;
-    height: auto;
-    top: 392px;
-    left: 177px;
-    bottom: 0;
+  max-width: 300px;
+  height: auto;
+  top: 392px;
+  left: 177px;
+  bottom: 0;
 }
 
 #header .header-content .card .food-card {
-    right: -20px;
-    bottom: -127px;
+  right: -20px;
+  bottom: -127px;
 }
 
 #vouchers {
-    background-image: repeating-linear-gradient(45deg, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 10px, transparent 10px, transparent 11px), repeating-linear-gradient(135deg, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 10px, transparent 10px, transparent 11px), linear-gradient(90deg, hsl(256, 7%, 84%), hsl(256, 7%, 84%));
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgb(255, 255, 255) 0px,
+      rgb(255, 255, 255) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgb(255, 255, 255) 0px,
+      rgb(255, 255, 255) 10px,
+      transparent 10px,
+      transparent 11px
+    ),
+    linear-gradient(90deg, hsl(256, 7%, 84%), hsl(256, 7%, 84%));
 }
 
 .second-section {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .second-section .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .second-section img {
-    max-width: 200px;
-    height: auto;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    -webkit-filter: grayscale(100%) !important;
-    filter: grayscale(100%) !important;
+  max-width: 200px;
+  height: auto;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .second-section img:hover {
-    -webkit-filter: grayscale(0%) !important;
-    filter: grayscale(0%) !important;
-    scale: 1;
+  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
+  scale: 1;
 }
 
 .third-section {
-    padding: 4rem 0;
-    text-align: center;
+  padding: 4rem 0;
+  text-align: center;
 }
 
 .third-section .blog {
-    margin: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.115);
-    border-radius: 25px;
-    background-color: #fff5f27b;
-    transition: .3s;
+  margin: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  border-radius: 25px;
+  background-color: #fff5f27b;
+  transition: 0.3s;
 }
 
 .third-section .blog:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
 }
 
 .third-section h5 {
-    color: #ff6b01;
-    font-size: 1rem;
-    line-height: 20px;
+  color: #ff6b01;
+  font-size: 1rem;
+  line-height: 20px;
 }
 
 .third-section h2 {
-    font-family: "AirbnbCereal_W_Bd";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 47px;
-    /* identical to box height */
-    text-align: center;
-    color: #232224;
+  font-family: "AirbnbCereal_W_Bd";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+  text-align: center;
+  color: #232224;
 }
 
 .third-section article {
-    font-family: "inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 28px;
-    color: #6e6c72;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 28px;
+  color: #6e6c72;
 }
 
 .third-section .btn {
-    border: 1px solid #7b4cdf;
-    border-radius: 19.5px;
-    padding: 10px 30px;
-    font-weight: 600;
+  border: 1px solid #7b4cdf;
+  border-radius: 19.5px;
+  padding: 10px 30px;
+  font-weight: 600;
 }
 
 .third-section .btn:hover {
-    background: #7b4cdf;
-    color: #fff;
+  background: #7b4cdf;
+  color: #fff;
 }
 
 .fourth-section {
-    background-color: #fff5f2;
-    overflow: hidden;
+  background-color: #fff5f2;
+  overflow: hidden;
 }
 
 .fourth-section .col-md-3 {
-    width: 270px;
-    height: auto;
-    padding-bottom: 3rem;
-    background: #ffffff;
-    -webkit-box-shadow: 0px 19px 33px #f2fafc;
-    box-shadow: 0px 19px 33px #f2fafc;
-    border-radius: 12px;
+  width: 270px;
+  height: auto;
+  padding-bottom: 3rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 19px 33px #f2fafc;
+  box-shadow: 0px 19px 33px #f2fafc;
+  border-radius: 12px;
 }
 
 .fourth-section .food-items {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .fourth-section .fourth-header {
-    text-align: center;
+  text-align: center;
 }
 
 .fourth-section .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .fourth-section .row .cart-header {
-    position: relative;
+  position: relative;
 }
 
 .fourth-section .row .cart-header img {
-    position: static;
+  position: static;
 }
 
 .fourth-section .row .food-card {
-    margin: 2rem 0;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-    border-radius: 12px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    cursor: pointer;
+  margin: 2rem 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  cursor: pointer;
 }
 
 .fourth-section .row .food-card:hover {
-    -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .fourth-section .row .cart-info {
-    padding: 2rem;
-    border-radius: 12px;
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 .fourth-section .row .cart-info img {
-    width: 14px;
-    height: 14px;
+  width: 14px;
+  height: 14px;
 }
 
 .fourth-section .row .cart-info .food-price {
-    background-color: #7b4cdf12;
-    color: #353237;
-    text-align: center;
-    width: 47px;
-    height: 47px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 25px;
+  background-color: #7b4cdf12;
+  color: #353237;
+  text-align: center;
+  width: 47px;
+  height: 47px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .fourth-section .row .cart-info p {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    padding-top: 12px;
-    color: #353237;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  padding-top: 12px;
+  color: #353237;
 }
 
 .fourth-section .row .ratings {
-    background-color: #7b4cdf;
-    padding: 7px 14px;
-    border-radius: 7px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 1111;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: #fff;
+  background-color: #7b4cdf;
+  padding: 7px 14px;
+  border-radius: 7px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1111;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .fourth-section .row .ratings img {
-    padding-right: 7px;
+  padding-right: 7px;
 }
 
 .fourth-section h4 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 23px;
-    color: #353237;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #353237;
 }
 
 .fourth-section img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .fourth-section .food-price {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    color: #353237;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #353237;
 }
 
 .fourth-section,
 .fifth-section {
-    padding: 3rem 0;
-    text-align: center;
+  padding: 3rem 0;
+  text-align: center;
 }
 
 .fourth-section h5,
 .fifth-section h5 {
-    color: #ff6b01;
-    font-size: 1rem;
-    line-height: 20px;
+  color: #ff6b01;
+  font-size: 1rem;
+  line-height: 20px;
 }
 
 .fourth-section h2,
 .fifth-section h2 {
-    font-family: "AirbnbCereal_W_Bd";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 47px;
-    /* identical to box height */
-    text-align: center;
-    color: #353237;
+  font-family: "AirbnbCereal_W_Bd";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  /* identical to box height */
+  text-align: center;
+  color: #353237;
 }
 
 .fourth-section article,
 .fifth-section article {
-    font-family: "inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 28px;
-    color: #9a97a1;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 28px;
+  color: #9a97a1;
 }
 
 .fifth-section .fifth-header {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .fifth-section p {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 36px;
-    color: #353237;
-    padding: 2rem;
-    text-align: left;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #353237;
+  padding: 2rem;
+  text-align: left;
 }
 
 .fifth-section .col-lg-4 {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .fifth-section .fifth-content p:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .fifth-section .fifth-content {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-radius: 16px;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 16px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .fifth-section .fifth-content:hover {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.068) -4px 9px 25px -6px;
-    box-shadow: rgba(0, 0, 0, 0.068) -4px 9px 25px -6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.068) -4px 9px 25px -6px;
+  box-shadow: rgba(0, 0, 0, 0.068) -4px 9px 25px -6px;
 }
 
 .sixth-section {
-    padding: 6rem 0;
-    background-color: #fff5f2;
+  padding: 6rem 0;
+  background-color: #fff5f2;
 }
 
 .sixth-section .row {
-    -ms-flex-pack: distribute !important;
-    justify-content: space-around !important;
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
 }
 
 .sixth-section h1 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
-    /* or 128% */
-    color: #353237;
-    margin-top: 2rem;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  /* or 128% */
+  color: #353237;
+  margin-top: 2rem;
 }
 
 .sixth-section article {
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 28px;
-    /* or 156% */
-    color: #9a97a1;
-    padding: 2rem 0;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #9a97a1;
+  padding: 2rem 0;
 }
 
 .sixth-section .btn {
-    padding: 1rem 0;
-    margin-right: 1rem;
+  padding: 1rem 0;
+  margin-right: 1rem;
 }
 
 .sixth-section .products {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 footer {
-    background-color: #7b4cdf;
-    color: #fff;
-    padding: 5rem 0;
+  background-color: #7b4cdf;
+  color: #fff;
+  padding: 5rem 0;
 }
 
 footer img {
-    color: #fff;
+  color: #fff;
 }
 
 footer p {
-    margin: 2rem 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 28px;
-    /* or 200% */
-    color: #ffffff;
-    opacity: 0.8;
+  margin: 2rem 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 footer h3 {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 footer li {
-    font-size: 14px;
-    line-height: 18px;
-    margin: 1rem 0;
-    color: #fff5f2c0;
-    font-weight: 500;
-    cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 1rem 0;
+  color: #fff5f2c0;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 footer li:hover {
-    color: #fff;
+  color: #fff;
 }
 
 footer .copyrights {
-    text-align: center;
+  text-align: center;
 }
-
 
 /*# sourceMappingURL=style.css.map */

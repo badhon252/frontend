@@ -103,3 +103,27 @@
         font-weight: 400;
         font-family: 'Libre Caslon Text', serif;
     }
+    
+    .headerContent {
+        padding: 0 10rem;
+    }
+    
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    
+    .img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .heroSection .heroText {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+    }

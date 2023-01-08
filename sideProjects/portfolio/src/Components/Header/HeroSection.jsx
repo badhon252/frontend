@@ -1,5 +1,5 @@
-import Classes from './Header.module.css'
-import Badhon from "../../img/badhon.jpg"
+import Classes from "./Header.module.css";
+import Badhon from "../../img/badhon.jpg";
 
 export default function HeroSection() {
   return (
@@ -91,5 +91,5 @@ export default function HeroSection() {
     </div>
 
     </div>
-  )
+  );
 }

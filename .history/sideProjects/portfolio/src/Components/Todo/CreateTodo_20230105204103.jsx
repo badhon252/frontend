@@ -1,35 +1,35 @@
-import { useState } from "react"
-import Classes from "./Todo.module.css"
+import { useState } from "react";
+import Classes from "./Todo.module.css";
 
+export default function CreateTodo({ addNewTodo }) {
+  const [text, setText] = useState("");
 
-export default function CreateTodo({addNewTodo}) {
-
-  const [text, setText]=useState("");
-
-  const handleChange = (e) =>{
-    setText(e.target.value)
-
-  }
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
   return (
     <div>
-        <h1>To-Do's: </h1>
+      <h1>To-Do's: </h1>
 
-        <input 
-        type="text" 
-        className={Classes.input} 
-        placeholder="Input your To-Do's here!" 
+      <input
+        type="text"
+        className={Classes.input}
+        placeholder="Input your To-Do's here!"
         value={text}
         onChange={handleChange}
-        ></input>
+      ></input>
 
-        <button className={Classes.btn}
-        onClick={(e)=>{
-          addNewTodo(e.target.value)
-          setText("")
+      <button
+        className={Classes.btn}
+        onClick={(e) => {
+          addNewTodo(e.target.value);
+          setText("");
         }}
-        >Add</button>
-        
-        <div>{text}</div>
+      >
+        Add
+      </button>
+
+      <div>{text}</div>
     </div>
-  )
+  );
 }

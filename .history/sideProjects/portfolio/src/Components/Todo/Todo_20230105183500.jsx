@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Todo() {
-  return (
-    <div className='app'>Todo</div>
-  )
+  return <div className="app">Todo</div>;
 }

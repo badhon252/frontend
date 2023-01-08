@@ -1,179 +1,189 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .todo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .btn {
-    background-color: #333;
-    color: #f5f5f5;
-    font-size: 1.5rem;
-    font-weight: 300;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
+  background-color: #333;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .input {
-    background-color: #f5f5f5;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: 300;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1px solid #333;
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #333;
 }
 
 .todoLists {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .li {
-    background-color: rgb(235, 235, 235);
-    margin: 1rem 0;
-    padding: 1rem;
-    list-style-type: none;
-    font-weight: 400;
-    flex-grow: 1
+  background-color: rgb(235, 235, 235);
+  margin: 1rem 0;
+  padding: 1rem;
+  list-style-type: none;
+  font-weight: 400;
+  flex-grow: 1;
 }
 
 .noTodo {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    color: red;
-    font-style: italic;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: red;
+  font-style: italic;
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    color: rgb(255, 254, 254);
-    background-color: rgba(4, 0, 255, 0.534);
-    font-style: italic;
-    display: inline-block;
-    padding: 0.5rem;
-    border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: rgb(255, 254, 254);
+  background-color: rgba(4, 0, 255, 0.534);
+  font-style: italic;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
-
 
 /* .checkbox */
 
 @rem: 16rem;
 :root {
+  --body: #fafafa;
+  --text-default: #1d1d1f;
+  --text-secondary: #86868b;
+  @media (prefers-color-scheme: light) {
     --body: #fafafa;
     --text-default: #1d1d1f;
-    --text-secondary: #86868b;
-    @media (prefers-color-scheme: light) {
-        --body: #fafafa;
-        --text-default: #1d1d1f;
-    }
-    @media (prefers-color-scheme: dark) {
-        --body: #161616;
-        --text-default: #f5f5f7;
-    }
+  }
+  @media (prefers-color-scheme: dark) {
+    --body: #161616;
+    --text-default: #f5f5f7;
+  }
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: var(--body);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--body);
 }
-
 
 /* Checkbox Styles */
 
 input[type="checkbox"] {
-    -webkit-appearance: none;
-    outline: none;
+  -webkit-appearance: none;
+  outline: none;
+  position: absolute;
+  height: 80 / @rem;
+  width: 160 / @rem;
+  border: 5px solid var(--body);
+  border-radius: 40 / @rem;
+  cursor: pointer;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px #c3c3c3,
+    inset -10px -10px 15px -10px #fff;
+  @media (prefers-color-scheme: light) {
+    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5),
+      inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    box-shadow: -8px -4px 8px 0px rgba(255, 255, 255, 0.05),
+      8px 4px 12px 0px rgba(0, 0, 0, 0.5),
+      inset -4px -4px 4px 0px rgba(255, 255, 255, 0.05),
+      inset 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  /* Toggle Indicator */
+  &::before {
+    content: "";
+    height: 50 / @rem;
+    width: 50 / @rem;
+    background-color: var(--body);
     position: absolute;
-    height: 80 / @rem;
-    width: 160 / @rem;
-    border: 5px solid var(--body);
-    border-radius: 40 / @rem;
-    cursor: pointer;
-    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #fff;
+    margin: auto;
+    top: 0;
+    left: 15 / @rem;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: 7px 7px 15px #c3c3c3, 9px 9px 16px rgba(189, 189, 189, 0.6);
+    transition: 0.15s;
     @media (prefers-color-scheme: light) {
-        box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #fff;
+      box-shadow: 7px 7px 15px #c3c3c3, 9px 9px 16px rgba(189, 189, 189, 0.6);
     }
     @media (prefers-color-scheme: dark) {
-        box-shadow: -8px -4px 8px 0px rgba(255, 255, 255, 0.05), 8px 4px 12px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 4px 0px rgba(255, 255, 255, 0.05), inset 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: -8px -4px 8px 0px rgba(255, 255, 255, 0.05),
+        8px 4px 12px 0px rgba(0, 0, 0, 0.5);
     }
-    /* Toggle Indicator */
+  }
+  /* Label */
+  &::after {
+    content: "Off";
+    position: absolute;
+    font-size: 26 / @rem;
+    top: 20 / @rem;
+    right: 25 / @rem;
+    color: var(--text-secondary);
+    font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial",
+      sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+  }
+  /* Checked Styles */
+  &:checked {
+    background: #0071e3;
+    @media (prefers-color-scheme: light) {
+      box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+        -9px -9px 16px rgba(255, 255, 255, 0.5),
+        inset 10px 10px 15px -10px rgb(0, 71, 185),
+        inset -10px -10px 15px -10px rgb(0, 71, 185);
+    }
     &::before {
-        content: "";
-        height: 50 / @rem;
-        width: 50 / @rem;
-        background-color: var(--body);
-        position: absolute;
-        margin: auto;
-        top: 0;
-        left: 15 / @rem;
-        bottom: 0;
-        border-radius: 50%;
-        box-shadow: 7px 7px 15px #c3c3c3, 9px 9px 16px rgba(189, 189, 189, 0.6);
-        transition: 0.15s;
-        @media (prefers-color-scheme: light) {
-            box-shadow: 7px 7px 15px #c3c3c3, 9px 9px 16px rgba(189, 189, 189, 0.6);
-        }
-        @media (prefers-color-scheme: dark) {
-            box-shadow: -8px -4px 8px 0px rgba(255, 255, 255, 0.05), 8px 4px 12px 0px rgba(0, 0, 0, 0.5);
-        }
+      left: 85 / @rem;
+      box-shadow: none;
     }
-    /* Label */
     &::after {
-        content: "Off";
-        position: absolute;
-        font-size: 26 / @rem;
-        top: 20 / @rem;
-        right: 25 / @rem;
-        color: var(--text-secondary);
-        font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-        font-weight: 400;
-        letter-spacing: 0.004em;
+      content: "On";
+      left: 25 / @rem;
+      color: #f5f5f7;
     }
-    /* Checked Styles */
-    &:checked {
-        background: #0071e3;
-        @media (prefers-color-scheme: light) {
-            box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px rgb(0, 71, 185), inset -10px -10px 15px -10px rgb(0, 71, 185);
-        }
-        &::before {
-            left: 85 / @rem;
-            box-shadow: none;
-        }
-        &::after {
-            content: "On";
-            left: 25 / @rem;
-            color: #f5f5f7;
-        }
-    }
+  }
 }

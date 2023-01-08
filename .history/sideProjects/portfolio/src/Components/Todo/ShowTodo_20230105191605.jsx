@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function ShowTodo() {
   return (
     <div>
-        <h1>Todo List:</h1>
+      <h1>Todo List:</h1>
     </div>
-  )
+  );
 }
