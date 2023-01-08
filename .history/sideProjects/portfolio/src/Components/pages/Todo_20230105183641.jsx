@@ -1,10 +1,10 @@
-import React from 'react'
-import CreateTodo from '../Todo/CreateTodo'
+import React from "react";
+import CreateTodo from "../Todo/CreateTodo";
 
 export default function Todo() {
   return (
     <div>
-      <CreateTodo/>
+      <CreateTodo />
     </div>
-  )
+  );
 }

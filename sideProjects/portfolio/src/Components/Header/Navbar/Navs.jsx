@@ -5,7 +5,8 @@ import { Link } from "@reach/router"
 const Navs = () => {
     return (
             <nav className={Classes.navBar}>
-                <span className={Classes.navbarBrand}>Khalid</span>
+                <div className={Classes.navbarBrand}> 
+                <img src="../../../img/badhon.jpg" alt="" />KHB</div>
                 <div className={Classes.navbarNav} id="navbarNav">
                 <ul className={Classes.navs}>
                     <li>
@@ -20,6 +21,15 @@ const Navs = () => {
                     
                 </ul>    
                 </div>
+                <ul className={Classes.navs}>
+                    <li>
+                        <a href="https://github.com/badhon252" rel="noreferrer" target="_blank" className={Classes.navLinks}> Github </a>
+                    </li>
+                    <li>
+                        <a href="/linkedin" className={Classes.navLinks}> LinkedIn </a>
+                    </li>
+                    
+                </ul>  
             </nav>
     );
 }

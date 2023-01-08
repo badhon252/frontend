@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Todo() {
-  return (
-    <div>Todo</div>
-  )
+  return <div>Todo</div>;
 }
