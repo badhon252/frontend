@@ -1,0 +1,1 @@
+const addTodo = document.querySelector(".btn")
