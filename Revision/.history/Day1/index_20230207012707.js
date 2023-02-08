@@ -64,7 +64,7 @@ setup();
 document.getElementsByClassName("remove")[0].click();
 console.log(document.body.innerHTML); 
 */
-/* 
+
 function createCheckDigit(membershipId) {
   // Write the code that goes here.
     let sum = 0;
@@ -79,8 +79,7 @@ function createCheckDigit(membershipId) {
 }
 
 console.log(createCheckDigit("55555"));
- */
-/* 
+
 //? 1. Create a function that takes a string and returns a string in which each character is repeated once.
 //? Examples
 //? doubleChar("String") ➞ "SSttrriinngg"
@@ -97,36 +96,6 @@ function doubleChar(str) {
     }
 
 console.log(doubleChar("String"));
-console.log(doubleChar("Hello World!"));
+console.log(doubleChar("Hello Worlld!"));
 console.log(doubleChar("1234!_ "));
 console.log(doubleChar("%%^&*("));
- */
-
-// x=1;
-// console.log(x);
-// var x;
-/* 
-const arr = [1,2,3,4,5,6,7,8,9,10];
-
-for(let i in arr){
-    console.log(i);
-}
-
-const obj = {
-    name: "Rahul",
-    age: 20,
-    
-}
-
-for(let i in obj){
-    console.log(i);
-} */
-
-let data = fetch('https://jsonplaceholder.typicode.com/todos/1')
-.then(res=>res.json())
-.then(data=>console.log(data))
-.catch(()=>console.error("There is a problem with the API link!"));
-
-document.querySelector("#result").innerHTML = data
-
-console.log(data);

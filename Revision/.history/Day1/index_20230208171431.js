@@ -127,6 +127,6 @@ let data = fetch('https://jsonplaceholder.typicode.com/todos/1')
 .then(data=>console.log(data))
 .catch(()=>console.error("There is a problem with the API link!"));
 
-document.querySelector("#result").innerHTML = data
+document.querySelector("#result").innerHTML = data.then((data)=> data)
 
 console.log(data);

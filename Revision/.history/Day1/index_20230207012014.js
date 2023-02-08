@@ -21,20 +21,19 @@
 
 //? With the 'var' i is a global scoped variable, and it will print 6,6,6,6,6, that's why i use a function to create a new scope
 
-// (function(){
-//     let time = 1;
-//     for(var i = 1; i<=5; i++){
-//         (function(a){
-//             time += a;
-//             setTimeout(function(){
-//                 console.log(a)
-//             },time * 1000)
-//         })(i)
-//     }
-// })();
+(function(){
+    let time = 1;
+    for(var i = 1; i<=5; i++){
+        (function(a){
+            time += a;
+            setTimeout(function(){
+                console.log(a)
+            },time * 1000)
+        })(i)
+    }
+})();
 
 /* 
-//? assesment
 function setup() {
   // Write your code here.
     let images = document.getElementsByClassName("image");
@@ -64,69 +63,14 @@ setup();
 document.getElementsByClassName("remove")[0].click();
 console.log(document.body.innerHTML); 
 */
-/* 
+
 function createCheckDigit(membershipId) {
   // Write the code that goes here.
     let sum = 0;
     for(let i = 0; i<membershipId.length; i++){
         sum += Number(membershipId[i]);
     }
-    if(sum > 9){
-        return sum % 10;
-    }
-    
   return 0;
 }
 
 console.log(createCheckDigit("55555"));
- */
-/* 
-//? 1. Create a function that takes a string and returns a string in which each character is repeated once.
-//? Examples
-//? doubleChar("String") ➞ "SSttrriinngg"
-//? doubleChar("Hello World!") ➞ "HHeelllloo  WWoorrlldd!!"
-//? doubleChar("1234!_ ") ➞ "11223344!!__  "
-
-function doubleChar(str) {
-    // Your code here
-        let newStr = "";
-        for(let i = 0; i<str.length; i++){
-            newStr += str[i] + str[i];
-        }
-        return newStr;
-    }
-
-console.log(doubleChar("String"));
-console.log(doubleChar("Hello World!"));
-console.log(doubleChar("1234!_ "));
-console.log(doubleChar("%%^&*("));
- */
-
-// x=1;
-// console.log(x);
-// var x;
-/* 
-const arr = [1,2,3,4,5,6,7,8,9,10];
-
-for(let i in arr){
-    console.log(i);
-}
-
-const obj = {
-    name: "Rahul",
-    age: 20,
-    
-}
-
-for(let i in obj){
-    console.log(i);
-} */
-
-let data = fetch('https://jsonplaceholder.typicode.com/todos/1')
-.then(res=>res.json())
-.then(data=>console.log(data))
-.catch(()=>console.error("There is a problem with the API link!"));
-
-document.querySelector("#result").innerHTML = data
-
-console.log(data);

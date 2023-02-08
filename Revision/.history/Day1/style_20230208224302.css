@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-}
+* {}
 
 
 /* container is the parent tag  */
@@ -12,19 +7,14 @@
     background-color: cyan;
     height: 100vh;
     width: 100vw;
-    /* margin: 2rem; */
+    margin: 2rem;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
     flex-wrap: wrap;
-    order: 6;
 }
 
-
-/* box is the child tag */
-
 .box {
-    text-align: center;
     width: 100px;
     height: 100px;
     border: 1px solid rgb(0, 0, 0);
@@ -58,7 +48,6 @@
 .box6 {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    order: 1;
 }
 
 li {

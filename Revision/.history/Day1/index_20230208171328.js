@@ -122,11 +122,11 @@ for(let i in obj){
     console.log(i);
 } */
 
-let data = fetch('https://jsonplaceholder.typicode.com/todos/1')
+let data = fetch('https://jsonplaceholdevr.typicode.com/todos/1')
 .then(res=>res.json())
 .then(data=>console.log(data))
 .catch(()=>console.error("There is a problem with the API link!"));
 
-document.querySelector("#result").innerHTML = data
+document.querySelector("#root").innerHTML = data
 
 console.log(data);
