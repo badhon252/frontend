@@ -64,8 +64,8 @@ body {
 
 .box5 {
     background-color: rgb(255, 128, 0);
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
 .box6 {

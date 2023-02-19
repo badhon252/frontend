@@ -45,7 +45,8 @@ body {
     background-color: rgb(0, 0, 255);
 }
 
-.box1 {
+
+/* .box1 {
     background-color: rgb(255, 255, 0);
 }
 
@@ -63,16 +64,14 @@ body {
 }
 
 .box5 {
-    background-color: rgb(255, 128, 0);
-    grid-column-start: 2;
-    grid-column-end: 4;
+    background-color: rgb(55, 70, 77);
 }
 
 .box6 {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     order: 1;
-}
+} */
 
 li {
     padding: 10px 0;
