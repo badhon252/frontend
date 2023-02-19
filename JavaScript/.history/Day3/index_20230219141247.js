@@ -48,10 +48,11 @@ const getDeveloperProjects = (developerId) => {
     const dev = developers.find(developer=> developer.id === developerId)
     const devProjects = dev.projects;
     const projectsName = projects
-                        .filter(project => devProjects.includes(project.id))
-                        .map(project => `${dev.name}: Contribute on ${project.name}`)
+                        .filter(project => devProjects
+                            .includes(project.id)
+                            ).map(project => `${dev.name}: Contribute on ${project.name}`)
     return projectsName;
 }
 
-console.log(getDeveloperProjects('d3'));
+console.log(getDeveloperProjects('d1'));
 
