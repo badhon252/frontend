@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* container is the parent tag  */
+
+.container {
+    background-color: cyan;
+    height: 100vh;
+    width: 100vw;
+    /* margin: 2rem; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    order: 6;
+}
+
+
+/* box is the child tag */
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.box1 {
+    color: aliceblue;
+    background-color: rgb(255, 255, 0);
+}
+
+.box2 {
+    color: aliceblue;
+    background-color: rgb(255, 0, 0);
+}
+
+.box3 {
+    background-color: rgb(0, 255, 0);
+}
+
+.box4 {
+    color: aliceblue;
+    background-color: rgb(0, 0, 255);
+}
+
+.box5 {
+    background-color: rgb(121, 210, 255);
+}
+
+.box6 {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+li {
+    padding: 10px 0;
+    margin: 1rem 0;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
