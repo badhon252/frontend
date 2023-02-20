@@ -55,34 +55,8 @@ const getDeveloperProjects = (developerId) => {
 
 // console.log(getDeveloperProjects('d3'));
 
+const arr = [1,2,3,4,5,6,7,8,9,10];
+// const output = arr.map(x=>console.log(x))
 
-//! map filter reduce 
-
-const arr = [1,2,3,4,5,6,7,10,8,9];
-
-// const output = arr.map(x=>x)
-
-let sum = 0;
-// const output = arr.filter(x=>x<6 )
-
-// finding max num 
-// const output = arr.reduce((acc,curr)=> curr > acc ? curr : acc,0)
-
-const users = [
-  {firstName: 'Kristof', lastName: 'De Spiegeleer', age: 30},
-  {firstName: 'Arvid', lastName: 'De Spiegeleer', age: 28},
-  {firstName: 'Joren', lastName: 'De Spiegeleer', age: 26},
-  {firstName: 'John', lastName: 'Dou', age: 26},
-  {firstName: 'Angela', lastName: 'Yu', age: 26},
-]
-
-// const output = users.reduce((acc, curr)=>{
-//   console.log(acc)
-//   acc[curr.age] = acc[curr.age] ? ++acc[curr.age] : 1
-//   return acc
-// }, {}) //? {26: 3, 28: 1, 30: 1} 
-
-
-const output = users.filter(user=> user.age<30).map(user=>user.firstName) // ['Arvid', 'Joren', 'John', 'Angela']
-
-console.log(output)
+const output = arr.filter(x=>console.log(x))
+const output = arr.reduce(x=>console.log(x))

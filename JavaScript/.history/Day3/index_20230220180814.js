@@ -83,6 +83,8 @@ const users = [
 // }, {}) //? {26: 3, 28: 1, 30: 1} 
 
 
-const output = users.filter(user=> user.age<30).map(user=>user.firstName) // ['Arvid', 'Joren', 'John', 'Angela']
+const output = users.reduce((acc, curr)=>{
+  curr.map(x=>x.age<30);
+})
 
 console.log(output)

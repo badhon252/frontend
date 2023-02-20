@@ -76,13 +76,17 @@ const users = [
   {firstName: 'Angela', lastName: 'Yu', age: 26},
 ]
 
-// const output = users.reduce((acc, curr)=>{
-//   console.log(acc)
-//   acc[curr.age] = acc[curr.age] ? ++acc[curr.age] : 1
-//   return acc
-// }, {}) //? {26: 3, 28: 1, 30: 1} 
+const output = users.reduce(function(acc, curr){
+  console.log(acc, curr)
+  acc[curr.age] = acc[curr.age] ? ++acc[curr.age] : 1
+  return acc
+  // if(acc[curr.age]){
+  //   ++acc[curr.age]
+  // }else{
+  //   acc[curr.age]=1
+  // }
+  // return acc
+}, {})
 
 
-const output = users.filter(user=> user.age<30).map(user=>user.firstName) // ['Arvid', 'Joren', 'John', 'Angela']
-
-console.log(output)
+console.log(output) //? {26: 3, 28: 1, 30: 1}
