@@ -69,7 +69,7 @@ let sum = 0;
 // const output = arr.reduce((acc,curr)=> curr > acc ? curr : acc,0)
 
 const users = [
-  {firstName: 'Kristof', lastName: 'De Spiegeleer', age: 31},
+  {firstName: 'Kristof', lastName: 'De Spiegeleer', age: 30},
   {firstName: 'Arvid', lastName: 'De Spiegeleer', age: 28},
   {firstName: 'Joren', lastName: 'De Spiegeleer', age: 26},
   {firstName: 'John', lastName: 'Dou', age: 26},
@@ -82,11 +82,9 @@ const users = [
 //   return acc
 // }, {}) //? {26: 3, 28: 1, 30: 1} 
 
-
-//?Using filter & map function
-// const output = users.filter(user=> user.age<30).map(user=>user.firstName) 
+//Using filter & map function
+const output = users.filter(user=> user.age<30).map(user=>user.firstName) 
 // ['Arvid', 'Joren', 'John', 'Angela']
 
-const output = users.reduce((acc, curr)=> curr.age<30? [...acc, curr.firstName]: [], [])
 
 console.log(output)
