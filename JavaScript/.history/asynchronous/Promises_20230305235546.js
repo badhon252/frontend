@@ -14,9 +14,8 @@ fetch(API_KEY)
     .catch(error => console.log(error))
 })
 
-
-document.getElementById("collaps").addEventListener("click",function expand(e){
-    ul.innerHTML = ""
+document.getElementById("expand").addEventListener("click",function expand(e){
+    e.preventDefault()
     console.log(e)
 })
 
