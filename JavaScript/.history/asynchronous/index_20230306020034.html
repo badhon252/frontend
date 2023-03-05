@@ -10,13 +10,11 @@
     <style>
         body {
             margin: auto 10vw;
-            font-family: 'Courier New', Courier, monospace;
         }
 
         #btn,
         #collaps,
         #expand {
-            border: 1px solid black;
             border-radius: 5px;
             cursor: pointer;
             text-align: center;
@@ -29,22 +27,24 @@
             color: #000;
             font-size: 1rem;
             font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         #btn {
-            background-color: #aa00ff;
+            background-color: #7700ff;
             color: #fff;
             padding: .7rem 1.5rem;
         }
 
         #collaps {
-            background-color: rgb(245, 255, 55);
+            background-color: rgb(221, 232, 0);
             color: rgb(0, 0, 0);
             padding: .7rem;
+            border: 1px solid black;
         }
 
         #expand {
-            background-color: #00f919;
+            background-color: #bababa;
             padding: .7rem;
         }
     </style>
@@ -54,8 +54,8 @@
     <h1 style="text-align: center;">Hello synchronous World!</h1>
 
     <div>
-        <span id="btn">Fetch data</span>
         <span id="collaps">Collaps</span>
+        <span id="btn">Fetch data</span>
         <span id="expand">Expand</span>
 
         <ul id="ul"></ul>

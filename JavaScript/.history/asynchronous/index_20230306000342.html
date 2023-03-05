@@ -8,56 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <title>JavaScript</title>
     <style>
-        body {
-            margin: auto 10vw;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        #btn,
-        #collaps,
-        #expand {
-            border: 1px solid black;
+        button,
+        span {
+            display: block;
             border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            font-size: 1.2rem;
-            margin: 1rem;
-            display: inline-block;
         }
 
         li {
-            color: #000;
+            color: red;
             font-size: 1rem;
             font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        #btn {
-            background-color: #aa00ff;
+        button {
+            background-color: #7700ff;
             color: #fff;
-            padding: .7rem 1.5rem;
+            font-size: 1rem;
+            padding: .8rem 1.5rem;
+            border: none;
+            margin: 0 auto;
         }
 
-        #collaps {
-            background-color: rgb(245, 255, 55);
+        span {
+            background-color: rgb(242, 255, 0);
             color: rgb(0, 0, 0);
             padding: .7rem;
-        }
-
-        #expand {
-            background-color: #00f919;
-            padding: .7rem;
+            font-size: 1.2rem;
+            border: 1px solid black;
+            cursor: pointer;
+            margin: 1rem 2rem;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <h1 style="text-align: center;">Hello synchronous World!</h1>
-
-    <div>
-        <span id="btn">Fetch data</span>
-        <span id="collaps">Collaps</span>
-        <span id="expand">Expand</span>
-
+    <button id="btn">Fetch data</button>
+    <div id="collaps"> <span>collaps</span>
         <ul id="ul"></ul>
     </div>
     <!-- <script src="index.js"></script> -->

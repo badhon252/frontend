@@ -15,16 +15,16 @@ const data = () =>{
 
 document.getElementById("btn").addEventListener("click", data)
 
-ul.innerHTML = "Fetch data to show something!"
+ul.innerHTML = "Fetch data to show Something!"
 
-document.getElementById("collaps").addEventListener("click",function collaps(){
+document.getElementById("collaps").addEventListener("click",function collaps(e){
     try{
         ul.style.display = "none"
     }catch{
         console.log("error")
     }
 })
-document.getElementById("expand").addEventListener("click",function expand(){
+document.getElementById("expand").addEventListener("click",function expand(e){
     try{
         ul.style.display = "block"
         ul.innerHTML = data()
