@@ -1,28 +1,18 @@
 const ul = document.getElementById("ul");
-//? Writing a debounce function to handle api call request!!
-function debounce(fn, delay = 300){
-    let timer = null;
-    return function(){
-        if(timer) clearInterval(timer);
-        timer = setTimeout(fn, delay)
-    }
-}
+
+const API_KEY = 'https://jsonplaceholder.typicode.com/todos/'
 
 //! 1. Create a function that fetches data from the API and returns it as a promise.
-document.getElementById("btn").addEventListener("click", debounce(() =>{
-    ul.style.display = "block"
-    const API_KEY = 'https://jsonplaceholder.typicode.com/todos/';
-
+document.getElementById("btn").addEventListener("click", () =>{
     function title (e){
-        return `<li>${e.id}. ${e.title.slice(0,1).toUpperCase() + e.title.slice(1)}.</li>`
+        return `${e.title.slice(0,1).toUpperCase() + e.title.slice(1)}`
     }
-
     fetch(API_KEY)
     .then(response => response.json())
-    .then(data =>data.map(e=>title(e)))
-    .then(data =>ul.innerHTML = data.join(''))
+    .then(data =>data.map(e=>`<li>${e.id}. Title: ${title(e)}.</li>`))
+    .then(data =>ul.innerHTML = data)
     .catch(error => console.log(error))
-}, 500))
+})
 
 //? Default value of ul before the fetched data
 ul.innerHTML = "Fetch data to show something!"

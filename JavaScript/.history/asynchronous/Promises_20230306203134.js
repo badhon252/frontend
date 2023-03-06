@@ -22,7 +22,7 @@ document.getElementById("btn").addEventListener("click", debounce(() =>{
     .then(data =>data.map(e=>title(e)))
     .then(data =>ul.innerHTML = data.join(''))
     .catch(error => console.log(error))
-}, 500))
+}))
 
 //? Default value of ul before the fetched data
 ul.innerHTML = "Fetch data to show something!"
