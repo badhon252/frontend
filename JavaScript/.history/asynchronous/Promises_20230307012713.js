@@ -1,9 +1,8 @@
 const ul = document.getElementById("ul");
-
 //? Writing a debounce function to handle api call request!!
 function debounce(fn, delay = 300){
     let timer = null;
-    return ()=>{
+    return function(){
         if(timer) clearInterval(timer);
         timer = setTimeout(fn, delay)
     }
