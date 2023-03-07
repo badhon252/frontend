@@ -35,19 +35,6 @@ h1 {
     line-height: 1.1;
 }
 
-button {
-    font-family: inherit;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #1a1a1a;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 1.6em 2.2em;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-
 .game-board button {
     border-radius: 8px;
     border: 1px solid transparent;
