@@ -1,6 +1,6 @@
 import './App.css'
 // import Game from './Game/Game'
-import UseState from './Components/Hooks/UseState'
+import UseState from './Hooks/UseState'
 
 function App() {
   return (
