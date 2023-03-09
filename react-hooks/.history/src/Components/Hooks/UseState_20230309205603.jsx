@@ -7,9 +7,9 @@ const UseState = () => {
     
     return (
         <div className='useStateHook'>
-           <button onClick={()=>{setCount(count+1); console.log('run')}}> + </button>
+           <button onClick={()=>{setCount(count+2); console.log('run')}}> + </button>
               <span>{count}</span>
-           <button onClick={()=>{setCount(count<=0?0:count-1); console.log('run')}}> - </button>
+           <button onClick={()=>{setCount(count<=0?0:count-2); console.log('run')}}> - </button>
         </div>
     );
 }
