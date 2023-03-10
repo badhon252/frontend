@@ -14,8 +14,8 @@ function App() {
         {show && <UseEffect/>}   
       </div>
       <button onClick={()=>setShow((prev=>!prev))}>
-        {show? "Hide post" : "Show post" }
-      </button>
+        {show?"Hide post":"Show post"}
+        </button>
     </div>
   )
 }
