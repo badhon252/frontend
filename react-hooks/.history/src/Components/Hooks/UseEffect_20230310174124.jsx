@@ -1,5 +1,5 @@
-import "./hooks.css"
 import {useState,useEffect} from 'react';
+import "./hooks.css"
 
 const UseEffect = () => {
 
@@ -8,18 +8,11 @@ const UseEffect = () => {
     // const [text, setText] = useState();
     const [date, setDate] = useState(new Date());
 
-    function tick(){
-        setDate(new Date()) 
-        console.log("Mounted!")
-    }
-
     useEffect(() => {
-       const interval = setInterval(tick, 1000);
-        return()=>{
-            console.log("Component unMounted")
-            clearInterval(interval);
-        }
-    }, [])
+        const interval = setInterval(() => {
+            setDate(new Date())
+        }, 1000);
+    }, )
 
     // useEffect(() => {
     //     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
@@ -38,8 +31,6 @@ const UseEffect = () => {
         <div className="time">
             <h1>Time</h1>
             <h2>{date.toLocaleTimeString()}</h2>
-            
-
         </div>
 
         {/* <div className="form">

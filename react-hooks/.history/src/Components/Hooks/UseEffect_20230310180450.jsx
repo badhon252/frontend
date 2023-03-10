@@ -1,5 +1,5 @@
-import "./hooks.css"
 import {useState,useEffect} from 'react';
+import "./hooks.css"
 
 const UseEffect = () => {
 
@@ -7,19 +7,17 @@ const UseEffect = () => {
     // const [items, setItems] = useState([]);
     // const [text, setText] = useState();
     const [date, setDate] = useState(new Date());
-
-    function tick(){
-        setDate(new Date()) 
-        console.log("Mounted!")
-    }
+    const [show, setShow] = useState(true);
 
     useEffect(() => {
-       const interval = setInterval(tick, 1000);
-        return()=>{
-            console.log("Component unMounted")
+        const interval = setInterval(() => {
+            setDate(new Date())
+        }, 1000);
+        console.log("cleaned up");
+        return ()=>{
             clearInterval(interval);
         }
-    }, [])
+    }, )
 
     // useEffect(() => {
     //     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
@@ -38,6 +36,7 @@ const UseEffect = () => {
         <div className="time">
             <h1>Time</h1>
             <h2>{date.toLocaleTimeString()}</h2>
+            <button onClick={()=>setShow((prev=>!prev))}>{!show?"Hide post":"Show post"}</button>
             
 
         </div>

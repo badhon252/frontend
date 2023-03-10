@@ -10,12 +10,7 @@ function App() {
     <div className="App">
       {/* <Game/> */}
       {/* <UseState/> */}
-      <div>
-        {show && <UseEffect/>}   
-      </div>
-      <button onClick={()=>setShow((prev=>!prev))}>
-        {show? "Hide post" : "Show post" }
-      </button>
+      <UseEffect/>
     </div>
   )
 }

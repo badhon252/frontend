@@ -1,25 +1,22 @@
-import "./hooks.css"
 import {useState,useEffect} from 'react';
+import "./hooks.css"
 
 const UseEffect = () => {
 
     // const [resourceType, setResourceType] = useState("posts");
     // const [items, setItems] = useState([]);
     // const [text, setText] = useState();
-    const [date, setDate] = useState(new Date());
+    const [date, setDate] = useState({});
 
     function tick(){
         setDate(new Date()) 
-        console.log("Mounted!")
     }
 
     useEffect(() => {
-       const interval = setInterval(tick, 1000);
-        return()=>{
-            console.log("Component unMounted")
-            clearInterval(interval);
-        }
-    }, [])
+        const interval = setInterval(tick, 1000);
+        console.log("Mounted!")
+
+    }, )
 
     // useEffect(() => {
     //     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)

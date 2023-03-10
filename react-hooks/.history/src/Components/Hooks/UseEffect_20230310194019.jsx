@@ -15,10 +15,12 @@ const UseEffect = () => {
 
     useEffect(() => {
        const interval = setInterval(tick, 1000);
-        return()=>{
-            console.log("Component unMounted")
-            clearInterval(interval);
+
+        return ()=>{
+            console.log("Unmounted!")
+            clearInterval(interval)
         }
+        
     }, [])
 
     // useEffect(() => {
