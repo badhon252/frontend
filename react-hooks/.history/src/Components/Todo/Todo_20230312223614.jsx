@@ -13,7 +13,7 @@ const Todo = () => {
 
     function addTodo(e){
         e.preventDefault();
-        if(input !== ""){
+        if(!input){
             setTodo(()=>[...todo, input])
             setInput("")
         }else{
@@ -22,7 +22,7 @@ const Todo = () => {
     }
 
     function handleCheck(e){
-        console.log(e.target.key)
+        console.log(e.target)
         if(isCecked){
             setIsCecked(prev=> !prev)
             setMyClass(clicked)
