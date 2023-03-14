@@ -7,28 +7,33 @@ const Todo = () => {
     const {todoItem, todoInput, btn, todoItems, todos, disBtn, clicked} = Classes;
 
     const [input, setInput] = useState("");
-    const [todo, setTodo] = useState([]);
+    const [todo, setTodo] = useState(["Learn React", "Learn Redux", "Learn NextJs"]);
     const [myClass, setMyClass] = useState("");
     const [isCecked, setIsCecked] = useState(false);
 
     function addTodo(e){
         e.preventDefault();
-        if(input !== ""){
-            setTodo(()=>[...todo, input])
-            setInput("")
-        }else{
-            alert("Enter any text first!");
-        }
+        const myinputItem ={
+                id: uuidv4,
+                text: input
+
+            }
+        setTodo(oldItems=>{
+            
+            return [...oldItems, myinputItem]
+        })
+        setInput("")
     }
 
     function handleCheck(e){
-        console.log(e.target.key)
+        console.log(e.target.id)
         if(isCecked){
             setIsCecked(prev=> !prev)
             setMyClass(clicked)
         }else{
             setMyClass("")
         }
+        
     }
 
     return (
@@ -52,7 +57,7 @@ const Todo = () => {
             <ul className="todos">
                {todo.map(item=>{
                 return (
-                    <li className={`${todoItem} ${!isCecked && myClass}`} 
+                    <li className={`${todoItem} `} 
                     key={uuidv4()} 
                     onClick={handleCheck}>
                         {item}

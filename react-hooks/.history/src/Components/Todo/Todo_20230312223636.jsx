@@ -22,7 +22,7 @@ const Todo = () => {
     }
 
     function handleCheck(e){
-        console.log(e.target.key)
+        console.log(e.target)
         if(isCecked){
             setIsCecked(prev=> !prev)
             setMyClass(clicked)

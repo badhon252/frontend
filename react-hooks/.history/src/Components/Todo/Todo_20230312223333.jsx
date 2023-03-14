@@ -13,16 +13,16 @@ const Todo = () => {
 
     function addTodo(e){
         e.preventDefault();
-        if(input !== ""){
+        if(input){
+            alert("Enter any text first!");
+        }else{
             setTodo(()=>[...todo, input])
             setInput("")
-        }else{
-            alert("Enter any text first!");
         }
     }
 
     function handleCheck(e){
-        console.log(e.target.key)
+        console.log(e.target)
         if(isCecked){
             setIsCecked(prev=> !prev)
             setMyClass(clicked)
