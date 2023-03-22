@@ -16,7 +16,6 @@ const UseEffect = () => {
 
     useEffect(() => {
        const interval = setInterval(tick, 1000);
-       console.log("Component did mount!")
         return ()=>{
             console.log("Component did unmounted")
             clearInterval(interval);

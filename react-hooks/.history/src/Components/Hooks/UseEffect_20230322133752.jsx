@@ -6,7 +6,6 @@ const UseEffect = () => {
     // const [resourceType, setResourceType] = useState("posts");
     // const [items, setItems] = useState([]);
     // const [text, setText] = useState();
-    
     const [date, setDate] = useState(()=> new Date());
 
     function tick(){
@@ -15,13 +14,10 @@ const UseEffect = () => {
     }
 
     useEffect(() => {
-       const interval = setInterval(tick, 1000);
-       console.log("Component did mount!")
         return ()=>{
             console.log("Component did unmounted")
-            clearInterval(interval);
         }
-    }, [])
+    }, [tick])
 
     // useEffect(() => {
     //     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)

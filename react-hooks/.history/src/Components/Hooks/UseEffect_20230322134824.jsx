@@ -7,7 +7,7 @@ const UseEffect = () => {
     // const [items, setItems] = useState([]);
     // const [text, setText] = useState();
     
-    const [date, setDate] = useState(()=> new Date());
+    const [date, setDate] = useState(()=>new Date());
 
     function tick(){
         setDate(()=>new Date()) 
@@ -16,7 +16,6 @@ const UseEffect = () => {
 
     useEffect(() => {
        const interval = setInterval(tick, 1000);
-       console.log("Component did mount!")
         return ()=>{
             console.log("Component did unmounted")
             clearInterval(interval);
