@@ -7,12 +7,7 @@ const Todo = () => {
     const {todoItem, todoInput, btn, todoItems, todos, disBtn, clicked} = Classes;
 
     const [input, setInput] = useState("");
-    const [todo, setTodo] = useState(()=>{
-        const saved = localStorage.getItem("todo");
-        const initialValue = JSON.parse(saved);
-        return initialValue || [];
-    }
-       );
+    const [todo, setTodo] = useState([]);
     const [myClass, setMyClass] = useState("");
     const [isCecked, setIsCecked] = useState(false);
 
@@ -56,13 +51,13 @@ const Todo = () => {
             </form>
             <ul className="todos">
                {todo.map(item=>{
-                console.log(item)
                 return (
                     <li className={`${todoItem} ${!isCecked && myClass}`} 
                     key={uuidv4()} 
                     onClick={handleCheck}>
                         {item}
                     </li>
+                    console.log(item)
                 )
                })}
 

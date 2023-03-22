@@ -4,7 +4,6 @@ import './App.css'
 import UseEffect from './Components/Hooks/UseEffect'
 // import Game from './Game/Game'
 // import UseState from './Components/Hooks/UseState'
-import Counter from './Components/Hooks/Counter'
 
 function App() {
   return (
@@ -19,8 +18,6 @@ function App() {
       {/* <button onClick={()=>setShow((prev=>!prev))}>
         {show? "Hide post" : "Show post"}
       </button> */}
-
-      <Counter/>
     </div>
   )
 }

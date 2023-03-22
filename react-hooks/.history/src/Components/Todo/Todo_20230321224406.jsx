@@ -7,12 +7,7 @@ const Todo = () => {
     const {todoItem, todoInput, btn, todoItems, todos, disBtn, clicked} = Classes;
 
     const [input, setInput] = useState("");
-    const [todo, setTodo] = useState(()=>{
-        const saved = localStorage.getItem("todo");
-        const initialValue = JSON.parse(saved);
-        return initialValue || [];
-    }
-       );
+    const [todo, setTodo] = useState([]);
     const [myClass, setMyClass] = useState("");
     const [isCecked, setIsCecked] = useState(false);
 

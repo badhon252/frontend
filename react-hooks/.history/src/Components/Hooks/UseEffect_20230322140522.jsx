@@ -21,7 +21,7 @@ const UseEffect = () => {
             console.log("Component did unmounted")
             clearInterval(interval);
         }
-    }, [])
+    }, [date])
 
     // useEffect(() => {
     //     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
