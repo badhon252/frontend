@@ -24,7 +24,7 @@ export default function Hooks() {
 
   return (
       <div className="counter">
-        {/* <hr /> */}
+        <hr />
         <h1>Counter</h1>
         <h1>{count}</h1>
         <button onClick={increament}>Increament</button>

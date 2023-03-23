@@ -14,21 +14,24 @@ export default function Hooks() {
         return 0;
   });
 
+  console.log("Hello")
 
   function increament() {
-    setCount(prev=>prev + 1);
+    setCount(count + 1);
   }
   function Decreament() {
-    setCount(prev=>prev - 1);
+    setCount(count - 1);
   }
 
   return (
+    <div className="">
       <div className="counter">
-        {/* <hr /> */}
+        <hr />
         <h1>Counter</h1>
         <h1>{count}</h1>
         <button onClick={increament}>Increament</button>
         <button onClick={Decreament}>Decreament</button>
       </div>
+    </div>
   );
 }
