@@ -26,6 +26,7 @@ function App() {
 
       <IncreamentCounter />
       <WithHover />
+      console.log(WithHover, IncreamentCounter)
     </div>
   )
 }
