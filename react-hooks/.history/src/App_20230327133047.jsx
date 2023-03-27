@@ -5,8 +5,8 @@ import './App.css'
 // import Game from './Game/Game'
 // import UseState from './Components/Hooks/UseState'
 // import Counter from './Components/Hooks/Counter'
-import IncreamentCounter from './Components/HOC/IncreamentCounter'
-import WithHover from './Components/HOC/WithHover'
+import IncreamentCounter from './Components/Hooks/IncreamentCounter'
+import WithHover from './Components/Hooks/WithHover'
 
 function App() {
   return (
@@ -24,8 +24,7 @@ function App() {
 
       {/* <Counter/> */}
 
-      <IncreamentCounter />
-      <WithHover />
+      <IncreamentCounter/>
     </div>
   )
 }
