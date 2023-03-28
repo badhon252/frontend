@@ -7,7 +7,7 @@ const WithCounter = (OriginalComponent)=>{
       count:0,
     }
 
-    increament = () => {
+    increament =()=>{
       this.setState(prevState=> ({count: prevState.count + 1}))
     }
     
