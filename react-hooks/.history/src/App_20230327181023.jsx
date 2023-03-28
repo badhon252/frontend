@@ -7,7 +7,6 @@ import './App.css'
 // import Counter from './Components/Hooks/Counter'
 import IncreamentCounter from './Components/HOC/IncreamentCounter'
 import WithHover from './Components/HOC/WithHover'
-import Counter from './Components/Hooks/Counter/Counter'
 import Hooks from './Components/Hooks/Hooks'
 
 function App() {
@@ -29,9 +28,7 @@ function App() {
       {/* <IncreamentCounter />
       <WithHover /> */}
 
-      {/* <Hooks/> */}
-
-      <Counter/>
+      <Hooks/>
     </div>
   )
 }
