@@ -34,28 +34,27 @@ class HillCipher {
   getInverseKey() {
     const det = this.determinant(this.key);
     const detInv = this.multiplicativeInverse(det);
-
+    
     if (detInv == -1) {
       throw new Error("The key is not invertible.");
     }
-
+    
     const adjugate = [
       [this.key[1][1], -this.key[0][1]],
       [-this.key[1][0], this.key[0][0]]
     ];
-
+    
     const inverseKey = [];
-
+    
     for (let i = 0; i < this.blockSize; i++) {
       inverseKey[i] = [];
       for (let j = 0; j < this.blockSize; j++) {
         inverseKey[i][j] = ((detInv * adjugate[i][j]) % 26 + 26) % 26;
       }
     }
-
+    
     return inverseKey;
   }
-
   
   // Function to encrypt a plaintext using the Hill Cipher
   encrypt(plainText) {

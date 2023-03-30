@@ -1,7 +1,13 @@
 class HillCipher {
   constructor(key) {
+    // Check for valid key
+    const n = Math.sqrt(key.length);
+    if (!Number.isInteger(n) || n < 1) {
+      throw new Error("The key must be a square matrix of size n x n.");
+    }
+    
     this.key = key;
-    this.blockSize = key.length;
+    this.blockSize = n;
     this.inverseKey = this.getInverseKey();
   }
   
@@ -17,13 +23,13 @@ class HillCipher {
   
   // Helper function to calculate the determinant of a 2x2 matrix
   determinant(matrix) {
-    return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+    return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
   }
   
   // Helper function to calculate the multiplicative inverse of a number
   multiplicativeInverse(num) {
     for (let i = 0; i < 26; i++) {
-      if ((num * i) % 26 == 1) {
+      if ((num * i) % 26 === 1) {
         return i;
       }
     }
@@ -35,7 +41,7 @@ class HillCipher {
     const det = this.determinant(this.key);
     const detInv = this.multiplicativeInverse(det);
 
-    if (detInv == -1) {
+    if (detInv === -1) {
       throw new Error("The key is not invertible.");
     }
 
@@ -59,10 +65,15 @@ class HillCipher {
   
   // Function to encrypt a plaintext using the Hill Cipher
   encrypt(plainText) {
+    // Check for valid input
+    if (!plainText || plainText.length % this.blockSize !== 0) {
+      throw new Error("The plaintext length must be a multiple of the block size.");
+    }
+
     let cipherText = "";
     
     // Pad the plaintext with X's if necessary
-    while (plainText.length % this.blockSize != 0) {
+    while (plainText.length % this.blockSize !== 0) {
       plainText += "X";
     }
     

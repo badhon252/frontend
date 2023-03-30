@@ -34,28 +34,27 @@ class HillCipher {
   getInverseKey() {
     const det = this.determinant(this.key);
     const detInv = this.multiplicativeInverse(det);
-
+    
     if (detInv == -1) {
       throw new Error("The key is not invertible.");
     }
-
+    
     const adjugate = [
       [this.key[1][1], -this.key[0][1]],
       [-this.key[1][0], this.key[0][0]]
     ];
-
+    
     const inverseKey = [];
-
+    
     for (let i = 0; i < this.blockSize; i++) {
       inverseKey[i] = [];
       for (let j = 0; j < this.blockSize; j++) {
         inverseKey[i][j] = ((detInv * adjugate[i][j]) % 26 + 26) % 26;
       }
     }
-
+    
     return inverseKey;
   }
-
   
   // Function to encrypt a plaintext using the Hill Cipher
   encrypt(plainText) {
@@ -96,37 +95,3 @@ class HillCipher {
   }
   
   // Function to decrypt a ciphertext using the Hill Cipher
-
-  decrypt(cipherText) {
-    
-    let plainText = "";
-    
-    // Iterate over the ciphertext in blocks of size blockSize
-    for (let i = 0; i < cipherText.length; i += this.blockSize) {
-      const block = cipherText.substring(i, i + this.blockSize);
-      const blockNums = [];
-      
-      // Convert the block to numbers
-      for (let j = 0; j < this.blockSize; j++) {
-        blockNums.push(this.charToNum(block.charAt(j)));
-      }
-      
-      // Perform matrix multiplication
-      const plainNums = [];
-      for (let j = 0; j < this.blockSize; j++) {
-        let sum = 0;
-        for (let k = 0; k < this.blockSize; k++) {
-          sum += this.inverseKey[j][k] * blockNums[k];
-        }
-        plainNums.push(sum % 26);
-      }
-      
-      // Convert the plain numbers to characters
-      for (let j = 0; j < this.blockSize; j++) {
-        plainText += this.numToChar(plainNums[j]);
-      }
-    }
-    
-    return plainText;
-  }
-}
