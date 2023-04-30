@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import "./App.css";
 // import HOC from "./Components/HOC/HOC";
 // import Todo from './Components/Todo/Todo'
@@ -16,11 +16,11 @@ import MyComponent from "./Components/Context/MyComponent";
 import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
-  const [theme, setTheme] = useState("Light");
+  const [theme, setTheme] = useState("light");
 
   function toggleTheme() {
-    setTheme(theme === "Light" ? "Dark" : "Light");
-    console.log("Click");
+    setTheme(theme === "Light" ? "dark" : "light");
+    console.log();
   }
 
   return (

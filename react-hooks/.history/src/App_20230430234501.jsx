@@ -16,10 +16,10 @@ import MyComponent from "./Components/Context/MyComponent";
 import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
-  const [theme, setTheme] = useState("Light");
+  const [theme, setTheme] = useState("light");
 
   function toggleTheme() {
-    setTheme(theme === "Light" ? "Dark" : "Light");
+    setTheme(theme === "Light" ? "dark" : "light");
     console.log("Click");
   }
 

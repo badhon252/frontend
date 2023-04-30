@@ -16,7 +16,7 @@ import MyComponent from "./Components/Context/MyComponent";
 import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
-  const [theme, setTheme] = useState("Light");
+  const [theme, setTheme] = useState("Dark");
 
   function toggleTheme() {
     setTheme(theme === "Light" ? "Dark" : "Light");

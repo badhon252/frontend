@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import "./App.css";
 // import HOC from "./Components/HOC/HOC";
 // import Todo from './Components/Todo/Todo'
@@ -16,17 +16,15 @@ import MyComponent from "./Components/Context/MyComponent";
 import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
-  const [theme, setTheme] = useState("Light");
+  const [theme, setTheme] = useState("light");
 
   function toggleTheme() {
-    setTheme(theme === "Light" ? "Dark" : "Light");
-    console.log("Click");
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   }
-
   return (
     <div className="App">
       {/* Making Dark & light mode switcher  */}
-      <ThemeContext.Provider value={{ toggleTheme, theme }}>
+      <ThemeContext.Provider value={{ toggleTheme, style }}>
         <MyComponent />
       </ThemeContext.Provider>
     </div>

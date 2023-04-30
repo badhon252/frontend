@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment } from "react";
 import "./App.css";
 // import HOC from "./Components/HOC/HOC";
 // import Todo from './Components/Todo/Todo'
@@ -7,28 +7,37 @@ import "./App.css";
 // import Game from './Game/Game'
 // import UseState from './Components/Hooks/UseState'
 // import Counter from './Components/Hooks/Counter'
-// import Counter from "./Components/Hooks/Counter/Counter";
+import Counter from "./Components/Hooks/Counter/Counter";
 // import Form from "./Components/Hooks/Counter/Form_ref/Form";
 // import Hooks from "./Components/Hooks/Hooks";
 // import Child from "./Components/content/Child";
 // import Parent from "./Components/content/Parent";
 import MyComponent from "./Components/Context/MyComponent";
-import ThemeContext from "./Components/Context/ThemeContext";
+import MyProvider from "./Components/Context/MyProvider";
 
 function App() {
-  const [theme, setTheme] = useState("Light");
-
-  function toggleTheme() {
-    setTheme(theme === "Light" ? "Dark" : "Light");
-    console.log("Click");
-  }
-
   return (
     <div className="App">
       {/* Making Dark & light mode switcher  */}
-      <ThemeContext.Provider value={{ toggleTheme, theme }}>
+      <MyProvider>
+        {/* <Game/> */}
+        {/* <UseState/> */}
+        <Fragment>
+          {/* <UseEffect/> */}
+          {/* {show && <UseEffect/>}    */}
+          {/* <Todo/> */}
+        </Fragment>
+        {/* <button onClick={()=>setShow((prev=>!prev))}>
+        {show? "Hide post" : "Show post"}
+      </button> */}
+        {/* <Counter/> */}
+        {/* <HOC /> */}
+        {/* <Hooks/> */}
+        {/* <Counter /> */}
+        {/* <Form /> */}
+
         <MyComponent />
-      </ThemeContext.Provider>
+      </MyProvider>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MyContext from "./MyContext";
+import MyContext from "./ThemeContext";
 import MyComponent from "./MyComponent";
 
 const MyProvider = () => {

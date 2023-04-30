@@ -5,22 +5,14 @@
   text-align: center;
 }
 
-/* Dark mode  */
-
 .Dark {
   background-color: #000;
   color: #fff;
 }
 
-/* Light mode  */
-
 .Light {
   background-color: #fff;
   color: #000;
-}
-
-button {
-  cursor: pointer;
 }
 
 .logo {

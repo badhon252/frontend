@@ -19,7 +19,7 @@ function App() {
   const [theme, setTheme] = useState("Light");
 
   function toggleTheme() {
-    setTheme(theme === "Light" ? "Dark" : "Light");
+    setTheme(theme !== "Light" ? "Dark" : "Light");
     console.log("Click");
   }
 
