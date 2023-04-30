@@ -7,13 +7,13 @@ import "./App.css";
 // import Game from './Game/Game'
 // import UseState from './Components/Hooks/UseState'
 // import Counter from './Components/Hooks/Counter'
-import Counter from "./Components/Hooks/Counter/Counter";
+// import Counter from "./Components/Hooks/Counter/Counter";
 // import Form from "./Components/Hooks/Counter/Form_ref/Form";
 // import Hooks from "./Components/Hooks/Hooks";
 // import Child from "./Components/content/Child";
 // import Parent from "./Components/content/Parent";
 import MyComponent from "./Components/Context/MyComponent";
-import MyProvider from "./Components/Context/MyProvider";
+import MyContext from "./Components/Context/MyContext";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         {/* <UseEffect/> */}
         {/* {show && <UseEffect/>}    */}
         {/* <Todo/> */}
-      </Fragment>
+      </Fra>
       {/* <button onClick={()=>setShow((prev=>!prev))}>
         {show? "Hide post" : "Show post"}
       </button> */}
@@ -35,12 +35,12 @@ function App() {
 
       {/* <Hooks/> */}
 
-      {/* <Counter /> */}
+      {/* <Counter/> */}
 
       {/* <Form /> */}
-      <MyProvider>
-        <MyComponent />
-      </MyProvider>
+      <MyComponent>
+
+      </MyComponent>
     </div>
   );
 }

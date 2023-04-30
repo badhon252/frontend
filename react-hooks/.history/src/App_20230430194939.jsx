@@ -35,10 +35,9 @@ function App() {
 
       {/* <Hooks/> */}
 
-      {/* <Counter /> */}
-
       {/* <Form /> */}
       <MyProvider>
+        <Counter />
         <MyComponent />
       </MyProvider>
     </div>

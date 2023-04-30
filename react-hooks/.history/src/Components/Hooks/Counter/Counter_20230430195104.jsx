@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useMemo } from "react";
-// import MyContext from "../../Context/MyContext";
 import Title from "./Title";
 import ShowCount from "./ShowCount";
 import Button from "./Button";
@@ -29,7 +28,7 @@ export default function Counter() {
   return (
     <>
       <Title />
-      {/* <MyContext>{({ message }) => <h1>{message}</h1>}</MyContext> */}
+
       <ShowCount count={count1} title="Counter 1" />
       <Button handleClick={increment1}> Increament By One </Button>
       <span>{isOddorEven ? "Even" : "Odd"}</span>

@@ -7,7 +7,7 @@ import "./App.css";
 // import Game from './Game/Game'
 // import UseState from './Components/Hooks/UseState'
 // import Counter from './Components/Hooks/Counter'
-import Counter from "./Components/Hooks/Counter/Counter";
+// import Counter from "./Components/Hooks/Counter/Counter";
 // import Form from "./Components/Hooks/Counter/Form_ref/Form";
 // import Hooks from "./Components/Hooks/Hooks";
 // import Child from "./Components/content/Child";
@@ -35,7 +35,7 @@ function App() {
 
       {/* <Hooks/> */}
 
-      {/* <Counter /> */}
+      <Counter />
 
       {/* <Form /> */}
       <MyProvider>
