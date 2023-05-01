@@ -24,7 +24,7 @@ function App() {
   }
 
   const value = useMemo(() => {
-    return { toggleTheme, theme };
+    ({ toggleTheme, theme });
   }, []);
 
   return (
