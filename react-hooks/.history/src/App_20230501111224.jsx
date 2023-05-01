@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 // import HOC from "./Components/HOC/HOC";
 // import Todo from './Components/Todo/Todo'
@@ -17,18 +17,20 @@ import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
   const [theme, setTheme] = useState("Light");
-  console.log("ContextProvider Rendered!");
 
   function toggleTheme() {
     setTheme(theme === "Light" ? "Dark" : "Light");
+    console.log("ContextProvider Rendered!");
   }
 
-  const value = useMemo(() => ({ toggleTheme, theme }));
+  const value = () => {
+    toggleTheme, theme;
+  };
 
   return (
     <div className="App">
       {/* Making Dark & light mode switcher  */}
-      <ThemeContext.Provider value={value}>
+      <ThemeContext.Provider value={value()}>
         <MyComponent />
       </ThemeContext.Provider>
     </div>

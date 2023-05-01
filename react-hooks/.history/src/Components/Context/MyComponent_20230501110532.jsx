@@ -2,12 +2,9 @@ import React, { useContext, useEffect } from "react";
 import ThemeContext from "./ThemeContext";
 import MyContent from "./MyContent";
 import "../../App.css";
-import MyButton from "./MyButton";
 
 const MyComponent = () => {
-  const { theme } = useContext(ThemeContext);
-
-  console.log("MyComponent Has rendered!");
+  const { toggleTheme, theme } = useContext(ThemeContext);
 
   useEffect(() => {
     document.body.className = theme;
@@ -16,7 +13,7 @@ const MyComponent = () => {
   return (
     <div>
       <MyContent />
-      <MyButton />
+      <button onClick={toggleTheme}>Switched to {theme} Mode!</button>
     </div>
   );
 };

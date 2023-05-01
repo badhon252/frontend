@@ -17,10 +17,10 @@ import ThemeContext from "./Components/Context/ThemeContext";
 
 function App() {
   const [theme, setTheme] = useState("Light");
-  console.log("ContextProvider Rendered!");
 
   function toggleTheme() {
     setTheme(theme === "Light" ? "Dark" : "Light");
+    console.log("ContextProvider Rendered!");
   }
 
   const value = useMemo(() => ({ toggleTheme, theme }));
