@@ -5,7 +5,7 @@ import "../../App.css";
 import MyButton from "./MyButton";
 
 const MyComponent = () => {
-  const { theme } = useContext(ThemeContext);
+  const { toggleTheme, theme } = useContext(ThemeContext);
 
   console.log("MyComponent Has rendered!");
 
