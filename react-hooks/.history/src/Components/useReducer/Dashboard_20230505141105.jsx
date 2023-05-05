@@ -7,10 +7,10 @@ const Dashboard = ({ data }) => {
       <h1>Dashboard</h1>
       {data.map(({ name, email, occupation, id }) => {
         return (
-          <ul key={id}>
-            <li>Name: {name}</li>
-            <li>Email: {email}</li>
-            <li>Occupation: {occupation}</li>
+          <ul>
+            <li key={id}>Name: {name}</li>
+            <li key={id}>Email: {email}</li>
+            <li key={id}>Occupation: {occupation}</li>
           </ul>
         );
       })}

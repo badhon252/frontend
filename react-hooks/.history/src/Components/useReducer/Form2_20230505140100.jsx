@@ -1,11 +1,11 @@
-import React, { useState, useReducer, useId } from "react";
+import React, { useState, useReducer } from "react";
 import Dashboard from "./Dashboard";
 
 const initialValue = {
-  id: 0,
   name: "",
   email: "",
   occupation: "",
+  submit: false,
 };
 
 const reducer = (state, action) => {
@@ -16,8 +16,8 @@ const reducer = (state, action) => {
       return { ...state, email: action.payload };
     case "occupation":
       return { ...state, occupation: action.payload };
-    case "id":
-      return { ...state, id: (() => state.id + Math.random() * 10000)() };
+    case "submit":
+      return { ...state, submit: true };
 
     default:
       state;
@@ -26,42 +26,33 @@ const reducer = (state, action) => {
 
 export default function Form2() {
   const [state, dispatch] = useReducer(reducer, initialValue);
-  const { name, email, occupation } = state;
+  const { name, email, occupation, submit } = state;
 
   const [credentials, setCredentials] = useState([
     {
-      id: 1,
       email: "dev.khalidhossain@gmail.com",
-      name: "khalid Hossain",
+      name: "khalid",
       occupation: "Frontend Engineer",
       submit: true,
     },
     {
-      id: 2,
       email: "khalidhossain@gmail.com",
-      name: "Badhon",
+      name: "khalid",
       occupation: "Software Engineer",
       submit: true,
     },
     {
-      id: 3,
       name: "khalid Hossain Badhon",
       email: "khalid@gmail.com",
       occupation: "Software engineer",
       submit: false,
     },
-    {
-      id: 4,
-      name: "khalid ",
-      email: "dev.khalidhossain@gmail.com",
-      occupation: "Software engineer",
-      submit: false,
-    },
+    { name: "khalid ", email: "dev.khalidhossain@gmail.com" },
   ]);
 
   function submitHandler(e) {
     e.preventDefault();
-    dispatch({ type: "id" });
+    dispatch({ type: "submit" });
     setCredentials(() => [...credentials, state]);
     console.log(credentials);
   }
@@ -98,7 +89,7 @@ export default function Form2() {
         <button>Submit</button>
       </form>
       <hr />
-      <Dashboard data={credentials} />
+      {submit && <Dashboard data={credentials} />}
     </div>
   );
 }

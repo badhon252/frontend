@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useId } from "react";
+import React, { useState, useReducer, useId, useCallback } from "react";
 import Dashboard from "./Dashboard";
 
 const initialValue = {
@@ -8,7 +8,7 @@ const initialValue = {
   occupation: "",
 };
 
-const reducer = (state, action) => {
+const reducer = useCallback((state, action) => {
   switch (action.type) {
     case "name":
       return { ...state, name: action.payload };
@@ -22,7 +22,7 @@ const reducer = (state, action) => {
     default:
       state;
   }
-};
+});
 
 export default function Form2() {
   const [state, dispatch] = useReducer(reducer, initialValue);

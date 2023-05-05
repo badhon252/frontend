@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useId } from "react";
+import React, { useState, useReducer } from "react";
 import Dashboard from "./Dashboard";
 
 const initialValue = {
@@ -17,7 +17,7 @@ const reducer = (state, action) => {
     case "occupation":
       return { ...state, occupation: action.payload };
     case "id":
-      return { ...state, id: (() => state.id + Math.random() * 10000)() };
+      return { ...state, (id: () => state.id + Math.random() * 100)() };
 
     default:
       state;
@@ -32,14 +32,14 @@ export default function Form2() {
     {
       id: 1,
       email: "dev.khalidhossain@gmail.com",
-      name: "khalid Hossain",
+      name: "khalid",
       occupation: "Frontend Engineer",
       submit: true,
     },
     {
       id: 2,
       email: "khalidhossain@gmail.com",
-      name: "Badhon",
+      name: "khalid",
       occupation: "Software Engineer",
       submit: true,
     },

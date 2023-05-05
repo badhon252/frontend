@@ -5,9 +5,9 @@ const Dashboard = ({ data }) => {
   return (
     <div>
       <h1>Dashboard</h1>
-      {data.map(({ name, email, occupation, id }) => {
+      {data.map(({ name, email, occupation }) => {
         return (
-          <ul key={id}>
+          <ul>
             <li>Name: {name}</li>
             <li>Email: {email}</li>
             <li>Occupation: {occupation}</li>

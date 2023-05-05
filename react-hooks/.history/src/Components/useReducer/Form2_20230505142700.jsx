@@ -25,6 +25,7 @@ const reducer = (state, action) => {
 };
 
 export default function Form2() {
+  let id = useId();
   const [state, dispatch] = useReducer(reducer, initialValue);
   const { name, email, occupation } = state;
 
