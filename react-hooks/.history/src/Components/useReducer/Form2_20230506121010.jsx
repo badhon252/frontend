@@ -82,7 +82,7 @@ export default function Form2() {
           }
         />
         <br />
-        {name && email && occupation && <button>Submit</button>}
+        {state && <button>Submit</button>}
       </form>
       <hr />
       <Dashboard data={credentials} />
