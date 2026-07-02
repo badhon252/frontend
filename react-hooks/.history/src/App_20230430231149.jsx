@@ -1,0 +1,48 @@
+import { Fragment, useEffect, useState } from "react";
+import "./App.css";
+// import HOC from "./Components/HOC/HOC";
+// import Todo from './Components/Todo/Todo'
+// import { useState } from 'react'
+// import UseEffect from './Components/Hooks/UseEffect'
+// import Game from './Game/Game'
+// import UseState from './Components/Hooks/UseState'
+// import Counter from './Components/Hooks/Counter'
+// import Counter from "./Components/Hooks/Counter/Counter";
+// import Form from "./Components/Hooks/Counter/Form_ref/Form";
+// import Hooks from "./Components/Hooks/Hooks";
+// import Child from "./Components/content/Child";
+// import Parent from "./Components/content/Parent";
+import MyComponent from "./Components/Context/MyComponent";
+import ThemeContext from "./Components/Context/ThemeContext";
+
+function App() {
+  const [theme, setTheme] = useState("light");
+  const [style, setStyle] = useState("");
+
+  const toggleTheme = () => {
+    console.log("Clicked!");
+    if (theme === "light") {
+      setTheme("dark");
+      setStyle({
+        backgroundColor: "black",
+        color: "white",
+      });
+    } else {
+      setTheme("light");
+      setStyle({
+        backgroundColor: "white",
+        color: "black",
+      });
+    }
+  };
+  return (
+    <div className="App">
+      {/* Making Dark & light mode switcher  */}
+      <ThemeContext.Provider value={{ toggleTheme }}>
+        <MyComponent />
+      </ThemeContext.Provider>
+    </div>
+  );
+}
+
+export default App;

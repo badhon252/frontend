@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+    <style>
+        body {
+            margin: auto 10vw;
+        }
+
+        #btn,
+        #collaps,
+        #expand {
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 1rem;
+            display: inline-block;
+        }
+
+        li {
+            color: #000;
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #btn {
+            background-color: #7700ff;
+            color: #fff;
+            padding: .8rem 1.5rem;
+        }
+
+        #collaps {
+            background-color: rgb(242, 255, 0);
+            color: rgb(0, 0, 0);
+            padding: .7rem;
+            border: 1px solid black;
+        }
+
+        #expand {
+            background-color: #bababa;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Hello synchronous World!</h1>
+
+    <div>
+        <span id="collaps">Collaps</span>
+        <span id="btn">Fetch data</span>
+        <span id="expand">Expand</span>
+
+        <ul id="ul"></ul>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="async-await.js"></script> -->
+    <script src="Promises.js"></script>
+</body>
+
+</html>

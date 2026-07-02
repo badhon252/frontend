@@ -1,0 +1,11 @@
+const ul = document.getElementById("ul");
+
+let titles = [];
+
+const API_KEY = 'https://jsonplaceholder.typicode.com/todos/'
+ fetch(API_KEY)
+    .then(response => response.json())
+    .then(data =>titles.push(data) )
+    .catch(error => console.log(error))
+
+console.log(titles[0])

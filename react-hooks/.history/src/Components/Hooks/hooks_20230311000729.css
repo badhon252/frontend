@@ -1,0 +1,40 @@
+.useStateHook button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.useStateHook span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 1rem;
+}
+
+li {
+    margin: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}

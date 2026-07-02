@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-image: repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), linear-gradient(90deg, hsl(87, 0%, 9%), hsl(87, 0%, 9%));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form {
+    border: 1px solid rgba(129, 129, 129, 0.404);
+    border-radius: 7px;
+}
+
+
+/* .todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 40rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#todoList h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: rgb(212, 212, 212);
+    line-height: 1.5;
+}
+
+#todoInput {
+    padding: 0.5rem;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: inherit;
+}
+
+#todoList {
+    list-style: none;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    background-color: #e9e9e9;
+    color: #171421;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.task_edit,
+.task_delete {
+    padding: .4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+#todoList button:first-child {
+    background-color: #00ff00;
+}
+
+#todoList button:last-child {
+    background-color: #ff6a6a;
+}
+
+.content {
+    color: #00ff00;
+}

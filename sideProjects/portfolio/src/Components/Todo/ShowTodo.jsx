@@ -8,14 +8,14 @@ export default function ShowTodo({ todo, checkTodo }) {
           {todo.map((item) => {
             return (
               <div className={Classes.list} key={item.id}>
-                <input
+                
+                <li className={Classes.li} id="checkbox">
+                 <input
                   className={Classes.checkbox}
                   type="checkbox"
                   onClick={checkTodo}
                   htmlFor="checkbox"
-                ></input>
-                <li className={Classes.li} id="checkbox">
-                  {item.text}
+                ></input> <span> {item.text}</span> 
                 </li>
               </div>
             );

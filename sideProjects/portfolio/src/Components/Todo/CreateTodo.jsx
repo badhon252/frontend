@@ -8,7 +8,7 @@ export default function CreateTodo({ addNewTodo }) {
     setText(e.target.value);
   };
 
-  const handleClick = () => {
+  const handleCheck = () => {
     if (text) {
       addNewTodo(text);
       setText("");
@@ -29,7 +29,7 @@ export default function CreateTodo({ addNewTodo }) {
         onChange={handleChange}
       ></input>
 
-      <button className={Classes.btn} onClick={handleClick}>
+      <button className={Classes.btn} onClick={handleCheck}>
         Add
       </button>
 

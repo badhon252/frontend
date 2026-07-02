@@ -1,0 +1,27 @@
+function debounce(fn, delay) {
+let timer = null;
+
+console.log(timer === true)
+return function(){
+    if(timer) clearInterval(timer)
+    timer = setTimeout(fn, delay);
+    console.log(timer === true)
+    
+}
+}
+const addTodo = document.querySelector(".btn")
+
+
+function todo(){
+    const todo = document.querySelector("#todoInput").value
+    
+    const todoList = document.querySelector("#todoList");
+
+    const li = document.createElement("li");
+    li.innerHTML = todo;
+
+    (todo === '') ? alert("Please enter a todo") : todoList.appendChild(li)
+    
+}
+
+addTodo.addEventListener("click", debounce(todo, 200))

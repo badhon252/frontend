@@ -59,6 +59,7 @@
     list-style-type: none;
     font-weight: 400;
     flex-grow: 1;
+    text-decoration: line-through;
 }
 
 .noTodo {
